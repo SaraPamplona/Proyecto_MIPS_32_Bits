@@ -44,7 +44,7 @@ begin
             branch=1'b0;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b011;//¿Cómo hay que ponerlo?
+            alu_operation = 3'b011;
 	    memory_write = 1'b0;
             ALU_Src=1'b1;
             reg_write = 1'b1;
@@ -56,7 +56,7 @@ begin
             branch=1'b0;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b100;//¿Cómo hay que ponerlo?
+            alu_operation = 3'b100;
 	    memory_write = 1'b0;
             ALU_Src=1'b1;
             reg_write = 1'b1;
@@ -104,7 +104,7 @@ begin
             branch=1'b0;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b101;//¿Cómo hay que ponerlo?
+            alu_operation = 3'b101;
 	    memory_write = 1'b0;
             ALU_Src=1'b1;
             reg_write = 1'b1;
@@ -116,7 +116,7 @@ begin
             branch=1'b1;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b001;//¿Está bien?
+            alu_operation = 3'b001;
 	    memory_write = 1'b0;
             ALU_Src=1'b0;
             reg_write = 1'b0;
@@ -128,7 +128,7 @@ begin
             branch=1'b1;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b001;//¿Cómo implementar esta operación?
+            alu_operation = 3'b001;//No se puede implementar
 	    memory_write = 1'b0;
             ALU_Src=1'b0;
             reg_write = 1'b0;
@@ -140,19 +140,19 @@ begin
             branch=1'b1;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b101; //Esta operación falla cuando se elige un 0, porque 0>0 es falso y la manera en que implementó con SLT hace que se ejecuté el branch
+            alu_operation = 3'b101; //No se puede implementar totalmente
 	    memory_write = 1'b0;
             ALU_Src=1'b0;
             reg_write = 1'b0;
             jump=1'b0;
         end*/
-        6'b000010://Instrucción J
+        6'b000010://InstrucciÃ³n J
 	begin
             reg_Dst=1'b0;
             branch=1'b0;
             memory_read = 1'b0;
             memory_register = 1'b0;
-            alu_operation = 3'b000;//MODIFICAR
+            alu_operation = 3'b000;
 	    memory_write = 1'b0;
             ALU_Src=1'b0;
             reg_write = 1'b0;
